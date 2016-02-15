@@ -17,10 +17,11 @@
             return (
                 <div className="todoList">
                     <table style={{border: "2px solid black"}}>
-                        <tbody>
+                      <tbody>
                         <Todo title="Shopping">Milk</Todo>
                         <Todo title="Hair cut">13:00</Todo>
-                        </tbody>
+                        <Todo title="Learn React">15:00</Todo>
+                      </tbody>
                     </table>
                 </div>
             );
@@ -37,6 +38,9 @@
             );
         }
     }
+    Todo.propTypes = {
+        title: React.PropTypes.string
+    };
 
     class TodoForm extends React.Component {
       render() {
